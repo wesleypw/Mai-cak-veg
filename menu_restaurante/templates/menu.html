@@ -8,67 +8,42 @@
     <link rel="stylesheet" href="{% static 'produtos/css/menu.css' %}">
 </head>
 <body>
-<h1>Cardápio do Restaurante</h1>
+<header>
+<img class="logo" src="{% static 'produtos/img/logo.png' %}" alt="logo da doceria">
+<h1>Cardápio de doces </h1>
+</header>
+  
 
     <div class="menu-category">
-        <h2>Entradas</h2>
+        <h2>promoções do dia</h2>
         <div class="menu-item">
-            <img src="https://via.placeholder.com/100" alt="Bruschetta de Tomate">
+            <img src="{% static 'produtos/img/078__MG_7339.jpg'%}" alt="foto de um brownie">
             <div class="menu-item-details">
-                <p class="menu-item-name">Bruschetta de Tomate</p>
-                <p class="menu-item-description">Pão italiano coberto com tomates frescos, manjericão e azeite.</p>
-                <p class="menu-item-price">R$ 12,99</p>
-            </div>
-        </div>
-        <div class="menu-item">
-            <img src="https://via.placeholder.com/100" alt="Bolinho de Bacalhau">
-            <div class="menu-item-details">
-                <p class="menu-item-name">Bolinho de Bacalhau</p>
-                <p class="menu-item-description">Deliciosos bolinhos feitos com bacalhau desfiado e temperos especiais.</p>
-                <p class="menu-item-price">R$ 15,50</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="menu-category">
-        <h2>Pratos Principais</h2>
-        <div class="menu-item">
-            <img src="https://via.placeholder.com/100" alt="Filé Mignon ao Molho Madeira">
-            <div class="menu-item-details">
-                <p class="menu-item-name">Filé Mignon ao Molho Madeira</p>
-                <p class="menu-item-description">Filé mignon grelhado servido com molho madeira e batatas gratinadas.</p>
-                <p class="menu-item-price">R$ 45,00</p>
-            </div>
-        </div>
-        <div class="menu-item">
-            <img src="https://via.placeholder.com/100" alt="Frango Grelhado com Legumes">
-            <div class="menu-item-details">
-                <p class="menu-item-name">Frango Grelhado com Legumes</p>
-                <p class="menu-item-description">Peito de frango grelhado acompanhado de legumes sazonais.</p>
-                <p class="menu-item-price">R$ 32,75</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="menu-category">
-        <h2>Sobremesas</h2>
-        <div class="menu-item">
-            <img src="https://via.placeholder.com/100" alt="Pudim de Leite">
-            <div class="menu-item-details">
-                <p class="menu-item-name">Pudim de Leite</p>
-                <p class="menu-item-description">Clássico pudim de leite com calda de caramelo.</p>
+                <p class="menu-item-name">Brownie</p>
+                <p class="menu-item-description"></p>
                 <p class="menu-item-price">R$ 8,99</p>
             </div>
         </div>
         <div class="menu-item">
-            <img src="https://via.placeholder.com/100" alt="Mousse de Chocolate">
+            <img src="{% static 'produtos/img/169__MG_7611.jpg'%}" alt="foto de um bolo de chocolate">
             <div class="menu-item-details">
-                <p class="menu-item-name">Mousse de Chocolate</p>
-                <p class="menu-item-description">Mousse cremoso de chocolate com toque de cacau amargo.</p>
+                <p class="menu-item-name">Bolo de chocolate</p>
+                <p class="menu-item-description"></p>
                 <p class="menu-item-price">R$ 9,50</p>
             </div>
         </div>
+        <div class="menu-item">
+            <img src="{% static 'produtos/img/114__MG_7423.jpg'%}" alt=" foto de um cupcake">
+            <div class="menu-item-details">
+                <p class="menu-item-name">Cupcake</p>
+                <p class="menu-item-description"></p>
+                <p class="menu-item-price">R$ 6,50</p>
+            </div>
+        </div>
     </div>
+
+
+
 
 <!--
   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -110,6 +85,50 @@
   </button>
 </div>  
 -->
+
+
+
+
+
+  <!--<div class="menu-category">
+        <h2>Entradas</h2>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/100" alt="Bruschetta de Tomate">
+            <div class="menu-item-details">
+                <p class="menu-item-name">Bruschetta de Tomate</p>
+                <p class="menu-item-description">Pão italiano coberto com tomates frescos, manjericão e azeite.</p>
+                <p class="menu-item-price">R$ 12,99</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/100" alt="Bolinho de Bacalhau">
+            <div class="menu-item-details">
+                <p class="menu-item-name">Bolinho de Bacalhau</p>
+                <p class="menu-item-description">Deliciosos bolinhos feitos com bacalhau desfiado e temperos especiais.</p>
+                <p class="menu-item-price">R$ 15,50</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-category">
+        <h2>Pratos Principais</h2>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/100" alt="Filé Mignon ao Molho Madeira">
+            <div class="menu-item-details">
+                <p class="menu-item-name">Filé Mignon ao Molho Madeira</p>
+                <p class="menu-item-description">Filé mignon grelhado servido com molho madeira e batatas gratinadas.</p>
+                <p class="menu-item-price">R$ 45,00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/100" alt="Frango Grelhado com Legumes">
+            <div class="menu-item-details">
+                <p class="menu-item-name">Frango Grelhado com Legumes</p>
+                <p class="menu-item-description">Peito de frango grelhado acompanhado de legumes sazonais.</p>
+                <p class="menu-item-price">R$ 32,75</p>
+            </div>
+        </div>
+    </div>-->
 
 </body>
 </html>
