@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 20px;
 }
-header img{
+header > img{
        width: 100px;
 }
 
