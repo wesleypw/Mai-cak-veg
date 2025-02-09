@@ -1,13 +1,19 @@
 
-
-
-header img {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #D2691E;
+    color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
     
-    width: 100px;
-    
-
 }
 
+header img {
+    width: 150px;
+}
 
 .carousel {
     margin-top: 20px;
@@ -18,17 +24,40 @@ header img {
     width: 100px; /* Ajuste o tamanho conforme necessário */
     height: auto;
     border-radius: 5px;
+    box-shadow: black 0px 0px 5px;
 }
 
 #carouselExampleIndicators, #carouselExampleIndicators2, #carouselExampleIndicators3, #carouselExampleIndicators4 {
-    width: 100px; /* Ajuste o tamanho conforme necessário */
+    width: 200px;
+    margin: 10px; /* Ajuste o tamanho conforme necessário */
 }
 
 .carousel-indicators {
-    width: 40px; /* Ajuste as barras */
-    margin: 10px auto 10px auto; /* Ajuste as barras */
-    left: 15px;
-    bottom: -12px;
+    margin: 0;
 }
+
+.menu-section {
+    margin-top: 20px;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f5e6d3; /* Cor marrom bem clarinho */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.438) 5px 5px 12px -4px;
+}
+
+.menu-card .carousel {
+    margin-right: 20px;
+}
+
+
 
 
