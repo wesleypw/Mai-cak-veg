@@ -14,179 +14,116 @@
     <img class="logo" src="{% static 'produtos/img/logo.png' %}" alt="logo da doceria">
     <h1>Cardápio de doces</h1>
 </header>
+<!--promoções -->
+<div class="promo-banner">
+    <h2>Promoções Imperdíveis</h2>
+    <div class="promo-container">
+        <div class="promo-item">
+            <div class="promo-image">
+                <img src="{% static 'produtos/img/078__MG_7339.jpg' %}" alt="Brownie em Promoção">
+            </div>
+            <div class="promo-details">
+                <h3>Brownie Tradicional</h3>
+                <p class="original-price">R$ 5,00</p>
+                <p class="promo-price">R$ 3,50</p>
+                <span class="discount-badge">30% OFF</span>
+            </div>
+        </div>
+        
+        <div class="promo-item">
+            <div class="promo-image">
+                <img src="{% static 'produtos/img/169__MG_7611.jpg' %}" alt="Bolo em Promoção">
+            </div>
+            <div class="promo-details">
+                <h3>Bolo de Chocolate</h3>
+                <p class="original-price">R$ 10,00</p>
+                <p class="promo-price">R$ 7,50</p>
+                <span class="discount-badge">25% OFF</span>
+            </div>
+        </div>
+        
+        <div class="promo-item">
+            <div class="promo-image">
+                <img src="{% static 'produtos/img/114__MG_7423.jpg' %}" alt="Bolo de Cenoura">
+            </div>
+            <div class="promo-details">
+                <h3>Bolo de Cenoura</h3>
+                <p class="original-price">R$ 12,00</p>
+                <p class="promo-price">R$ 9,90</p>
+                <span class="discount-badge">17% OFF</span>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!--cardápio-->
 <div class="container">
     <div class="menu-card" style="background-color: #f5f5dc;">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{% static 'produtos/img/078__MG_7339.jpg' %}" class="d-block w-100" alt="foto de um brownie">
-                </div>
-                <div class="carousel-item">
-                    <img src="{% static 'produtos/img/169__MG_7611.jpg' %}" class="d-block w-100" alt="foto de um bolo de chocolate">
-                </div>
-                <div class="carousel-item">
-                    <img src="{% static 'produtos/img/114__MG_7423.jpg' %}" class="d-block w-100" alt="foto de um cupcake">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
+        <div class="menu-image">
+            <img src="{% static 'produtos/img/078__MG_7339.jpg' %}" class="w-100" alt="foto de um brownie">
         </div>
         <div class="menu-section">
-            
             <div class="menu-item">
-                <h2>Brownie</h2>
+                <h2>Brownie Tradicional</h2>
                 <p>R$ 5,00</p>
             </div>
             <div class="menu-item">
-                <p>ingredientes </p>
-            </div>
-            <div class="menu-item">
-                
+                <p>Delicioso brownie caseiro com chocolate belga, nozes e uma textura única que derrete na boca.</p>
             </div>
             <!-- Adicione mais itens conforme necessário -->
         </div>
     </div>
 
     <div class="menu-card" style="background-color: #f5f5dc;">
-        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{% static 'produtos/img/078__MG_7339.jpg' %}" class="d-block w-100" alt="foto de um brownie">
-                </div>
-                <div class="carousel-item">
-                    <img src="{% static 'produtos/img/169__MG_7611.jpg' %}" class="d-block w-100" alt="foto de um bolo de chocolate">
-                </div>
-                <div class="carousel-item">
-                    <img src="{% static 'produtos/img/114__MG_7423.jpg' %}" class="d-block w-100" alt="foto de um cupcake">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
+        <div class="menu-image">
+            <img src="{% static 'produtos/img/169__MG_7611.jpg' %}" class="w-100" alt="foto de um bolo de chocolate">
         </div>
         <div class="menu-section">
-            
             <div class="menu-item">
-                <h2>bolo de chocolate</h2>
+                <h2>Bolo de Chocolate Especial</h2>
                 <p>R$ 10,00</p>
             </div>
             <div class="menu-item">
-                <p>ingredientes </p>
-            </div>
-            <div class="menu-item">
-                
+                <p>Bolo de chocolate fofinho com cobertura de ganache, recheio cremoso e chocolate 70% cacau.</p>
             </div>
             <!-- Adicione mais itens conforme necessário -->
         </div>
     </div>
 
     <div class="menu-card" style="background-color: #f5f5dc;">
-        <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{% static 'produtos/img/078__MG_7339.jpg' %}" class="d-block w-100" alt="foto de um brownie">
-                </div>
-                <div class="carousel-item">
-                    <img src="{% static 'produtos/img/169__MG_7611.jpg' %}" class="d-block w-100" alt="foto de um bolo de chocolate">
-                </div>
-                <div class="carousel-item">
-                    <img src="{% static 'produtos/img/114__MG_7423.jpg' %}" class="d-block w-100" alt="foto de um cupcake">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
+        <div class="menu-image">
+            <img src="{% static 'produtos/img/114__MG_7423.jpg' %}" class="w-100" alt="foto de um cupcake">
         </div>
         <div class="menu-section">
-            
-          <div class="menu-item">
-              <h2>Cupcake</h2>
-              <p>R$ 5,00</p>
-          </div>
-          <div class="menu-item">
-              <p>ingredientes </p>
-          </div>
-          <div class="menu-item">
-              
-          </div>
+            <div class="menu-item">
+                <h2>Cupcake Gourmet</h2>
+                <p>R$ 5,00</p>
+            </div>
+            <div class="menu-item">
+                <p>Cupcake artesanal com massa fofinha, cobertura de buttercream e decoração personalizada.</p>
+            </div>
             <!-- Adicione mais itens conforme necessário -->
         </div>
     </div>
 
     <div class="menu-card" style="background-color: #f5f5dc;">
-        <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{% static 'produtos/img/078__MG_7339.jpg' %}" class="d-block w-100" alt="foto de um brownie">
-                </div>
-                <div class="carousel-item">
-                    <img src="{% static 'produtos/img/169__MG_7611.jpg' %}" class="d-block w-100" alt="foto de um bolo de chocolate">
-                </div>
-                <div class="carousel-item">
-                    <img src="{% static 'produtos/img/114__MG_7423.jpg' %}" class="d-block w-100" alt="foto de um cupcake">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
+        <div class="menu-image">
+            <img src="{% static 'produtos/img/078__MG_7339.jpg' %}" class="w-100" alt="foto de cookies">
         </div>
         <div class="menu-section">
-            
             <div class="menu-item">
-                <h2>Cookies</h2>
+                <h2>Cookies Artesanais</h2>
                 <p>R$ 15,00</p>
             </div>
             <div class="menu-item">
-                <p>ingredientes </p>
-                
+                <p>Cookies crocantes por fora e macios por dentro, com gotas de chocolate belga e um toque de flor de sal.</p>
             </div>
             
             <!-- Adicione mais itens conforme necessário -->
         </div>
     </div>
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
