@@ -1,5 +1,11 @@
 
+<style>
+p{
+    text-align: center;
+    font-size: 20px;
+}
 
+</style>
 <p>esse é meu primeiro projeto para uma empresa a mai cake veg.</p>
 <p>esse sistema é de minha altoria</p>
 
