@@ -1,13 +1,24 @@
-from django.shortcuts import render
+from django.contrib import admin
 from .models import MenuItem
 
-def menu_view(request):
-    starters = MenuItem.objects.filter(category='starter')
-    mains = MenuItem.objects.filter(category='main')
-    desserts = MenuItem.objects.filter(category='dessert')
-    context = {
-        'starters': starters,
-        'mains': mains,
-        'desserts': desserts,
-    }
-    return render(request, 'menu/menu.html', context)
+class MenuItemAdmin(admin.ModelAdmin):
+    list_display = ('name', 'category', 'price', 'is_promotion', 'promotional_price', 'discount_percentage')
+    list_filter = ('category', 'is_promotion')
+    search_fields = ('name', 'description')
+    list_editable = ('is_promotion', 'promotional_price', 'discount_percentage')
+    
+    # Campos organizados em grupos no formulário de edição
+    fieldsets = (
+        ('Informações Básicas', {
+            'fields': ('name', 'category', 'description', 'image')
+        }),
+        ('Preços', {
+            'fields': ('price',)
+        }),
+        ('Promoção', {
+            'fields': ('is_promotion', 'promotional_price', 'discount_percentage'),
+            'description': 'Marque "is_promotion" para exibir o produto na seção de promoções'
+        }),
+    )
+
+admin.site.register(MenuItem, MenuItemAdmin)

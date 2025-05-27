@@ -18,41 +18,37 @@
 <div class="promo-banner">
     <h2>Promoções Imperdíveis</h2>
     <div class="promo-container">
-        <div class="promo-item">
-            <div class="promo-image">
-                <img src="{% static 'produtos/img/078__MG_7339.jpg' %}" alt="Brownie em Promoção">
+        {% if promotion_items %}
+            {% for item in promotion_items %}
+            <div class="promo-item">
+                <div class="promo-image">
+                    {% if item.image %}
+                        <img src="{% static item.image %}" alt="{{ item.name }}">
+                    {% else %}
+                        <img src="{% static 'produtos/img/078__MG_7339.jpg' %}" alt="{{ item.name }}">
+                    {% endif %}
+                </div>
+                <div class="promo-details">
+                    <h3>{{ item.name }}</h3>
+                    <p class="original-price">R$ {{ item.price }}</p>
+                    <p class="promo-price">R$ {{ item.promotional_price }}</p>
+                    {% if item.discount_percentage %}
+                    <span class="discount-badge">{{ item.discount_percentage }}% OFF</span>
+                    {% endif %}
+                </div>
             </div>
-            <div class="promo-details">
-                <h3>Brownie Tradicional</h3>
-                <p class="original-price">R$ 5,00</p>
-                <p class="promo-price">R$ 3,50</p>
-                <span class="discount-badge">30% OFF</span>
+            {% endfor %}
+        {% else %}
+            <div class="promo-item">
+                <div class="promo-image">
+                    <img src="{% static 'produtos/img/078__MG_7339.jpg' %}" alt="Brownie em Promoção">
+                </div>
+                <div class="promo-details">
+                    <h3>Sem promoções no momento</h3>
+                    <p>Fique de olho! Em breve novas promoções.</p>
+                </div>
             </div>
-        </div>
-        
-        <div class="promo-item">
-            <div class="promo-image">
-                <img src="{% static 'produtos/img/169__MG_7611.jpg' %}" alt="Bolo em Promoção">
-            </div>
-            <div class="promo-details">
-                <h3>Bolo de Chocolate</h3>
-                <p class="original-price">R$ 10,00</p>
-                <p class="promo-price">R$ 7,50</p>
-                <span class="discount-badge">25% OFF</span>
-            </div>
-        </div>
-        
-        <div class="promo-item">
-            <div class="promo-image">
-                <img src="{% static 'produtos/img/114__MG_7423.jpg' %}" alt="Bolo de Cenoura">
-            </div>
-            <div class="promo-details">
-                <h3>Bolo de Cenoura</h3>
-                <p class="original-price">R$ 12,00</p>
-                <p class="promo-price">R$ 9,90</p>
-                <span class="discount-badge">17% OFF</span>
-            </div>
-        </div>
+        {% endif %}
     </div>
 </div>
 
